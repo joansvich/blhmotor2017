@@ -1,0 +1,50 @@
+.logo {
+  width: 120px;
+  padding: 20px;
+}
+.navbar{
+  width: 100%;
+  background-color: #555;
+  text-transform: uppercase;
+}
+
+.navbar, .navbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar .link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar ul li {
+  position: relative;
+  margin: 0 10px;
+}
+
+.navbar ul li:hover {
+  background: #5b78a7;
+}
+
+.navbar ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  background-color: #555;
+  text-transform: capitalize;
+}
+
+.navbar ul ul li {
+  float: none;
+  width: 150px
+}
+
+.navbar ul li:hover>ul {
+  display: block;
+}
