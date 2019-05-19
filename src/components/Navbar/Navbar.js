@@ -8,10 +8,9 @@ class Navbar extends Component {
       <>
         <nav className="navbar">
           <div>
-            <img className="logo" src="./images/logo-light.png" alt="" />
+            <Link to="/"><img className="logo" src="./images/logo.png" alt="" /></Link>
           </div>
           <ul>
-            <li><Link className="link" to='/'>Inicio</Link></li>
             <li><Link className="link" to='/'>Catálogo</Link>
               <ul>
                 <li><Link className="link" to='/coches'>Coches</Link></li>

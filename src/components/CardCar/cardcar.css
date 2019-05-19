@@ -1,0 +1,53 @@
+.card-car-container {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 6px;
+  margin: 10px;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  position: relative;
+  flex-basis: 44%;
+}
+
+.card-car-container h1 {
+  font-size: 18px;
+  color: var(--color-titles);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.card-car-container h3 {
+  color: var(--color-primary);
+  margin: 5px;
+}
+
+.card-car-container img {
+  width: 100%;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.buttons-contact {
+  position: absolute;
+  right: 5px;
+  bottom: 46px;
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons-contact svg{
+  fill: var(--color-primary);
+}
+
+.button-more, .button-mail {
+  width: 30px;
+  height: 30px;
+  background-color: #555;
+  border-radius: 100%;
+  padding: 6px;
+  margin: 0px 3px;
+}
+
+.button-mail {
+  background-color: #FFFDA3;
+}

@@ -1,97 +1,50 @@
-.first-banner {
+.homepage .banner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
   background-image: url('/images/banner/slide-1.jpg');
-  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 550px;
+  background-repeat: no-repeat;
 }
 
-.first-banner h1 {
-  font-size: 65px;
-  font-weight: 700;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  white-space: nowrap;
+.homepage .banner .banner-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 80%;
+  height: 90%;
 }
 
-.first-banner h1 span {
-  color: rgb(18, 195, 227);
-}
-
-.first-banner h2 {
-  font-size: 50px;
-  font-weight: 400;
+.banner-title h1 {
+  font-size: 40px;
+  text-align: center;
   color: white;
+  text-shadow: 0px 0px 20px black;
 }
 
-.first-banner p {
-  white-space: nowrap;
-  font-size: 16px;
-  line-height: 28px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.55);
-  -webkit-font-smoothing: antialiased;
+.banner-title h1 span {
+  color: #00FFF6;
 }
 
-.eslogan {
-  position: relative;
-  width: 100%;
-  height: 300px;
-}
-
-.eslogan span {
-  position: absolute;
+.banner p {
+  color: rgb(255, 255, 255, 0.74);
+  font-size: 12px;
   text-align: center;
-  top: 0;
-  font-size: 21.429em;
-  font-weight: 700;
-  letter-spacing: -2px;
-  line-height: 1;
-  width: 100%;
-  z-index: 0;
-  opacity: .07;
-  margin: 0 !important;
 }
 
-.eslogan h1 {
-  font-size: 64px;
-  width: 50%;
+.cars-available h2{
   text-align: center;
-  text-transform: uppercase;
-  -webkit-font-smoothing: antialiased;
-  margin: 15px 0px;
+  color: #525252;
+  font-size: 26px;
+  margin: 5px 0px;
 }
 
-.eslogan h1 b {
-  color: rgb(18, 195, 227);
-}
-
-.eslogan p {
-  text-align: center;
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
-}
-
-.grid-cars {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 20%);
-  margin: 40px 0px 0px 0px;
-}
-
-.grid-cars img {
-  width: 100%;
-  margin: 0;
-}
-
-
-.second-banner {
-  background-image: url('/images/banner/slide-2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 550px;
-  margin: 0;
+.list-cars-available {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
