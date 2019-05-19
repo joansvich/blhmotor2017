@@ -68,7 +68,9 @@ class homepage extends Component {
           <div className="list-cars-available">
             {this.renderCarList()}
           </div>
-          <button>Todos los coches</button>
+          <div className="button-all-cars">
+            <button>Todos los coches</button>
+          </div>
         </section>
       </div>
     );

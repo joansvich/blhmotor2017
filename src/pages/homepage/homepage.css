@@ -35,6 +35,10 @@
   text-align: center;
 }
 
+.cars-available {
+  position: relative;
+}
+
 .cars-available h2{
   text-align: center;
   color: #525252;
@@ -48,4 +52,21 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.button-all-cars {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+}
+.button-all-cars button{
+  background-color: #FF5C5C;
+  border-radius: 30px;
+  font-size: 20px;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 500;
 }
