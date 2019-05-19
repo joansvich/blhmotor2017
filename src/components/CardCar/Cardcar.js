@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './cardcar.css';
 
 class Cardcar extends Component {
@@ -10,7 +11,7 @@ class Cardcar extends Component {
         <h3>{price} €</h3>
         <h1>{model}</h1>
         <div className="buttons-contact">
-          <span className="button-more"><svg version="1.1" id="Capa_1"
+          <button className="button-more"><Link to="/"><svg version="1.1" id="Capa_1"
     viewBox="0 0 60 60">
   <g>
     <path d="M8,22c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S12.411,22,8,22z"/>
@@ -47,8 +48,8 @@ class Cardcar extends Component {
   </g>
   <g>
   </g>
-  </svg></span>
-          <span className="button-mail"><svg version="1.1" id="Capa_1"
+  </svg></Link></button>
+          <button className="button-mail"><Link to="/"><svg version="1.1" id="Capa_1"
 	 viewBox="0 0 14 14">
 <g>
 	<g>
@@ -90,7 +91,7 @@ class Cardcar extends Component {
 </g>
 <g>
 </g>
-</svg></span>
+</svg></Link></button>
         </div>
       </div>
     );

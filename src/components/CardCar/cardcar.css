@@ -5,7 +5,7 @@
   background-color: white;
   border-radius: 6px;
   margin: 10px;
-  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  box-shadow: 0 0 15px 1px rgba(32, 33, 36, 0.37);
   position: relative;
   flex-basis: 44%;
 }
@@ -35,17 +35,20 @@
   flex-direction: row;
 }
 
-.buttons-contact svg{
+.buttons-contact svg {
   fill: var(--color-primary);
 }
 
 .button-more, .button-mail {
+  text-decoration: none;
+  border: 0px;
   width: 30px;
   height: 30px;
   background-color: #555;
   border-radius: 100%;
   padding: 6px;
   margin: 0px 3px;
+  box-shadow: 0 0 15px 1px rgba(32, 33, 36, 0.37);
 }
 
 .button-mail {
