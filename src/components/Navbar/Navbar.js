@@ -11,11 +11,11 @@ class Navbar extends Component {
             <Link to="/"><img className="logo" src="./images/logo.png" alt="" /></Link>
           </div>
           <ul>
-            <li><Link className="link" to='/'>Catálogo</Link>
-              <ul>
+            <li><Link className="link" to='/cars'>Catálogo</Link>
+              {/* <ul>
                 <li><Link className="link" to='/coches'>Coches</Link></li>
                 <li><Link className="link" to='/'>Accesorios</Link></li>
-              </ul>
+              </ul> */}
             </li>
             <li><Link className="link" to='/'>Nosotros</Link></li>
             <li><Link className="link" to='/'>Contacto</Link></li>

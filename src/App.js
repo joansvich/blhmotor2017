@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
 import homepage from './pages/homepage/homepage';
 import notfound from './pages/notfound';
-import coches from './pages/coches';
 import createCars from './pages/createCars/createCars';
+import listCars from './pages/listCars/listCars';
 import Navbar from './components/Navbar/Navbar';
 
 class App extends Component {
@@ -14,8 +14,8 @@ class App extends Component {
         <Navbar />
         <Switch>
           <Route exact path="/" component={homepage} />
-          <Route exact path="/coches" component={coches} />
           <Route exact path="/create" component={createCars} />
+          <Route exact path="/cars" component={listCars} />
           <Route path="" component={notfound} />
         </Switch>
       </>
