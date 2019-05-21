@@ -1,62 +1,11 @@
 import React, { Component } from 'react';
-import './homepage.css';
-import CardCar from '../../components/CardCar/Cardcar';
-import carsService from '../../lib/cars-service';
-import { Link } from 'react-router-dom';
-import LazyLoad from 'react-lazyload';
-import Loader from 'react-loader-spinner'
+import "./buttoncall.css";
 
-class homepage extends Component {
-
-  state = {
-    listCars: [],
-    isLoading: true
-  }
-
-  componentDidMount() {
-    carsService.list()
-      .then((carList) => {
-        this.setState({
-          listCars: carList,
-          isLoading: false
-        })
-      })
-  }
-
-  renderCarList() {
-    return this.state.listCars.map((car, id) => {
-      if (id < 3) {
-        return <CardCar
-          key={`id-${id}`}
-          car={car}
-        />
-      }
-      return <></>;
-    })
-  }
-
-
+class ButtonCall extends Component {
   render() {
     return (
-      <div className="homepage">
-        <section className="banner">
-          <div className="banner-title">
-            <h1>Bienvenido a <span>BLH Motor 2017</span></h1>
-          </div>
-          <p>Especialistas en vehículos de importación así como nacionales</p>
-        </section>
-        <section className="cars-available">
-          <h2>Coches disponibles</h2>
-          <div className="list-cars-available">
-            {this.state.isLoading ? <Loader 
-         type="Puff"
-         color="#00BFFF"
-         height="100"	
-         width="100"
-      /> : this.renderCarList() }
-          </div>
-          <div className="button-all-cars">
-            <a href="tel:+34678567876"><button><svg version="1.1" id="Capa_1" viewBox="0 0 473.806 473.806" >
+      <div className="button-all-cars">
+        <a href="tel:+34678567876"><button><svg version="1.1" id="Capa_1" viewBox="0 0 473.806 473.806" >
 <g>
 	<g>
 		<path d="M374.456,293.506c-9.7-10.1-21.4-15.5-33.8-15.5c-12.3,0-24.1,5.3-34.2,15.4l-31.6,31.5c-2.6-1.4-5.2-2.7-7.7-4
@@ -114,11 +63,9 @@ class homepage extends Component {
 <g>
 </g>
 </svg></button></a>
-          </div>
-        </section>
       </div>
     );
   }
 }
 
-export default homepage;
+export default ButtonCall;

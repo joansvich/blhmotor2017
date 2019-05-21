@@ -1,0 +1,25 @@
+.button-all-cars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  bottom: 10px;
+  position: fixed;
+}
+
+.button-all-cars button {
+  text-decoration: none;
+  border: 0px;
+  width: 70px;
+  height: 70px;
+  background-color: #555;
+  border-radius: 100%;
+  padding: 15px;
+  margin: 0px 3px;
+  outline: none;
+  box-shadow: 0 0 15px 1px rgba(84, 84, 84, 0.54);
+}
+
+.button-all-cars button svg {
+  fill: var(--color-primary);
+}

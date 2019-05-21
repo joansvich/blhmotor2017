@@ -15,6 +15,11 @@ class CarsService {
       });
   }
 
+  getCar(id) {
+    return this.cars.get(`/cars/${id}`)
+      .then(({data}) => data)
+  }
+
   create(car) {
     const { model, image, price } = car;
     console.log(model);
