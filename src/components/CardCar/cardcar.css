@@ -4,7 +4,7 @@
   background-color: white;
   border-radius: 6px;
   margin: 10px;
-  box-shadow: 0 0 15px 1px rgba(32, 33, 36, 0.37);
+  box-shadow: 0 0 15px 1px rgba(144, 144, 144, 0.37);
   position: relative;
   flex-basis: 85%;
 }
@@ -13,12 +13,13 @@
   font-size: 18px;
   color: var(--color-titles);
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .card-car h3 {
-  color: var(--color-primary);
-  margin: 5px;
+  color: var(--color-price);
+  margin: 5px 10px;
+  font-size: 28px;
 }
 
 .card-car img {
@@ -28,8 +29,8 @@
 
 .buttons-contact {
   position: absolute;
-  right: 5px;
-  bottom: 46px;
+  right: 10px;
+  bottom: 40px;
   display: flex;
   flex-direction: row;
 }
@@ -38,19 +39,15 @@
   fill: var(--color-primary);
 }
 
-.button-more, .button-mail {
+.button-telf {
   text-decoration: none;
   border: 0px;
-  width: 30px;
-  height: 30px;
+  width: 70px;
+  height: 70px;
   background-color: #555;
   border-radius: 100%;
-  padding: 6px;
+  padding: 15px;
   margin: 0px 3px;
-  outline:none;
+  outline: none;
   box-shadow: 0 0 15px 1px rgba(32, 33, 36, 0.37);
-}
-
-.button-mail {
-  background-color: #FFFDA3;
 }
