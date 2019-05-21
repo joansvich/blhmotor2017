@@ -1,5 +1,4 @@
-.card-car-container {
-  width: 180px;
+.card-car {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -7,22 +6,22 @@
   margin: 10px;
   box-shadow: 0 0 15px 1px rgba(32, 33, 36, 0.37);
   position: relative;
-  flex-basis: 44%;
+  flex-basis: 85%;
 }
 
-.card-car-container h1 {
+.card-car h1 {
   font-size: 18px;
   color: var(--color-titles);
   text-align: center;
   margin-bottom: 5px;
 }
 
-.card-car-container h3 {
+.card-car h3 {
   color: var(--color-primary);
   margin: 5px;
 }
 
-.card-car-container img {
+.card-car img {
   width: 100%;
   border-radius: 6px 6px 0px 0px;
 }

@@ -53,6 +53,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 70px;
 }
 
 .button-all-cars {
@@ -61,6 +62,7 @@
   justify-content: center;
   width: 100%;
   bottom: 0;
+  position: fixed;
 }
 
 .button-all-cars button {
@@ -68,9 +70,9 @@
   border-radius: 30px;
   font-size: 20px;
   color: white;
-  padding: 5px 10px;
+  padding: 10px 15px;
   font-weight: 500;
-  margin: 10px;
+  margin: 15px;
   outline:none;
   border: 0;
   box-shadow: 0 0 15px 1px rgba(32, 33, 36, 0.37);
