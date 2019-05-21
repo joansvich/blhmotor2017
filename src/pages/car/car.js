@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import carsService from '../../lib/cars-service';
+import CardCar from '../../components/CardCar/Cardcar';
 
 class car extends Component {
 
@@ -20,11 +21,13 @@ class car extends Component {
 
 
   render() {
-    const {model, price, image} = this.state.car
+    const { model, price, image } = this.state.car
 
     return (
       <div>
-        <h1>{model}</h1>
+        <CardCar
+          car={this.state.car}
+        />
       </div>
     );
   }
