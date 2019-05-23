@@ -21,9 +21,8 @@ class CarsService {
   }
 
   create(car) {
-    const { model, image, price } = car;
-    console.log(model);
-    return this.cars.post('/cars/create', { model, image, price })
+    const { model, image, price, folder } = car;
+    return this.cars.post('/cars/create', { model, image, price, folder })
       .then(({ data }) => data);
   }
 

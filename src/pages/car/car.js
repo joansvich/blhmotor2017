@@ -20,35 +20,25 @@ class car extends Component {
   }
 
   renderImages = () => {
-    return this.state.car.images.forEach((image) => {
-      console.log(image);
-      return (<><img src={image} alt="" /></>)
+    const { folder } = this.state.car;
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+    return numbers.map((i) => {
+      return <>
+        <div id={`slide-${i}`}>
+          <img src={`/images/cars/${folder}/${i}.jpg`} alt="" />
+        </div>
+      </>
     })
   }
 
   render() {
-    const { model, price, image } = this.state.car
+    const { model, price, image, folder } = this.state.car
     return (
       <div>
         {this.state.isLoading ? <p>Loading..</p> : <>
           <div className="slider">
-            <a href="#slide-1">1</a>
-            <a href="#slide-2">2</a>
-            <a href="#slide-3">3</a>
-            <a href="#slide-4">4</a>
             <div className="slides">
-              <div id="slide-1">
-                <img src={this.state.car.images[0]} alt="" />
-              </div>
-              <div id="slide-2">
-                <img src={this.state.car.images[1]} alt="" />
-              </div>
-              <div id="slide-3">
-                <img src={this.state.car.images[2]} alt="" />
-              </div>
-              <div id="slide-4">
-                <img src={this.state.car.images[3]} alt="" />
-              </div>
+              {this.renderImages()}
             </div>
           </div>
         </>}
